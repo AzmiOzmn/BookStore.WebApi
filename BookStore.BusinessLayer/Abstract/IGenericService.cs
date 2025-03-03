@@ -9,7 +9,7 @@ namespace BookStore.BusinessLayer.Abstract
    public interface IGenericService<T> where T : class
     {
         void TAdd(T entity);
-        void TDelete(T id);
+        void TDelete(int id);
         void TUpdate(T entity);
         List<T> TGetAll();
         T TGetById(int id);

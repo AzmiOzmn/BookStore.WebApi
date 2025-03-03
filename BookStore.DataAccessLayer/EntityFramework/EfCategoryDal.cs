@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.DataAccessLayer.EntityFramework
 {
-    class EfCategoryDal : GenericRepository<Category>, ICategoryDal
+   public class EfCategoryDal : GenericRepository<Category>, ICategoryDal
     {
         public EfCategoryDal(BookStoreContext context) : base(context)
         {
